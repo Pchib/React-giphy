@@ -1,0 +1,33 @@
+.search-form {
+  text-align: center;
+}
+
+.search-form__input {
+  color: $darkGray;
+  height: 40px;
+  border: 0;
+  width: 50%;
+  padding: 0 20px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.search-form__button {
+  border: none;
+  color: $mediumGray;
+  background: $darkBlue;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: $breakpoint-sm - 1) {
+  .search-form__input,
+  .search-form__button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
+}

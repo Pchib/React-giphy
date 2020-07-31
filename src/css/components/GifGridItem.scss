@@ -1,0 +1,39 @@
+.gif-grid-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: transform 0.1s ease-in;
+  margin: 10px 0;
+  will-change: transform; // Let GPU handle
+
+  @include load-spinner;
+
+  .gif-grid-item__inner {
+    position: relative;
+    min-height: 50px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    position: relative;
+    z-index: 1;
+
+    .gif-grid-item__image {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.gif-grid-item__image {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.gif-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}

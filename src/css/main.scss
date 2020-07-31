@@ -1,0 +1,17 @@
+// Globals
+@import 'global/mixins';
+@import 'global/colors';
+@import 'global/grid';
+
+@import 'containers/App';
+
+@import 'components/GifGridItem';
+@import 'components/Search';
+@import 'components/ExpandedModal';
+
+body {
+  color: $lightGray;
+  background-color: $mediumGray;
+  margin: 0;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
